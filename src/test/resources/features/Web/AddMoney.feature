@@ -1,7 +1,7 @@
 Feature: Kredi kartıyla gerekli bilgiler girilerek hesaba para yatırılabilmeli
 
   @Regression
-  Scenario: Dogru kart bilgileri ile para yatırma islemi yapildiginda transactionsda bu islem goruntulenmeli
+  Scenario:Dogru kart bilgileri ile para yatırma islemi yapildiginda transactionsda bu islem goruntulenmeli
     * Uygulama sayfasina gidilir
     * "berker.oguz" ve "Test1018*b*s" bilgileri ile sisteme login olunur
     * Open Money Transfer butonuna tiklanir

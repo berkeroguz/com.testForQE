@@ -1,4 +1,4 @@
-package steps;
+package steps.WebSteps;
 
 import io.cucumber.java.en.Given;
 import org.testng.Assert;

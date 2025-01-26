@@ -6,8 +6,9 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
+        plugin = {"json:target/reports/parallel-web.json", "pretty","html:target/reports/parallel-web.html"},
         features = "src/test/resources/Features",
-        glue="steps",
+        glue="steps/WebSteps",
         monochrome = true,
         dryRun = false,
         tags= "@Regression"
