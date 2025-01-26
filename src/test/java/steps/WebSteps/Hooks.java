@@ -25,7 +25,7 @@ public class Hooks {
         scenarioName.set(scenario.getName().replace(" ","_"));
         //Driver başlatılmalı
         Log.info("***** Senaryo Başlatiliyor =>> " + scenario.getName());
-        DriverManager.initializeDriver(System.getProperty("browser"));
+        DriverManager.initializeDriver(System.getProperty("browser","chrome"));
     }
 
     @After

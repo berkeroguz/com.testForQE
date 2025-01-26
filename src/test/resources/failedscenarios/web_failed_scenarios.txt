@@ -1,0 +1,3 @@
+file:src/test/resources/Features/Web/Login.feature:4:11
+file:src/test/resources/Features/Web/AddMoney.feature:4
+file:src/test/resources/Features/Web/TransferMoney.feature:4
