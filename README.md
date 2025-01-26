@@ -1,7 +1,7 @@
 
 # Money Transfer Uygulaması
 
-Bu uygulama üzerinde UI ve API testleri yer almaktadır.
+Bu uygulama üzerinde UI ve API testleri yer almaktadır. Manuel senaryolar arasından sadece Prod'a çıkabilecek olan senaryolar örnek olarak eklenmiştir. Yoksa ürünün prod'a çıkmaması gerekir. Detaylı değerlendirme raporda mevcuttur.
 
 Proje üzerinde kullanılan teknolojiler
 ---
