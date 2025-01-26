@@ -67,6 +67,10 @@ Step4 : docker-compose down komutu ile selenoid ortamını kapatın.
 
 
 
+Son
+-
+Ek olarak Assertion methodları farklı bir classta toplanarak step classları daha temiz hale getirilebilir. Selenium methodları sistem kullanıldıkça daha temiz ve sade hale getirilerek farklı class'lara alınabilir. Örneğin ActionClass vb.
+
 
 
 
