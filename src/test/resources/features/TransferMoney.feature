@@ -1,5 +1,6 @@
 Feature: Transfer Money Islemlerinin Yapilmasi
 
+  @Regression
   Scenario: Pozitif bir tam sayi ile transfer islemi gerceklestirildiginde transactionsda bu islem goruntulenmeli
     * Uygulama sayfasina gidilir
     * "berker.oguz" ve "Test1018*b*s" bilgileri ile sisteme login olunur

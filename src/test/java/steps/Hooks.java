@@ -12,13 +12,14 @@ public class Hooks {
     @Before
     public void setUp(Scenario scenario){
         //Driver başlatılmalı
-        Log.info("***** Starting scenario =>> " + scenario.getName());
-        DriverManager.initializeDriver();
+        Log.info("***** Senaryo Başlatiliyor =>> " + scenario.getName());
+        DriverManager.initializeDriver("");
     }
 
     @After
-    public void afterDown(){
+    public void afterDown(Scenario scenario){
         DriverManager.quitDriver();
-        Log.info("****** SEnaryo sonlandi ***********");
+        Log.info("***********  "+ scenario.getName() +" isimli senaryo sonlandi ***********");
     }
+
 }

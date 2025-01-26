@@ -5,12 +5,12 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = "src/test/resources/Features",
-        glue="steps",
+        features = "src/test/resources/features/API",
+        glue="steps/APISteps",
         monochrome = true,
         dryRun = false,
-        tags= "@Regression"
+        tags= "@Test"
 )
-public class Runner extends AbstractTestNGCucumberTests {
+public class APIRunner extends AbstractTestNGCucumberTests {
 
 }
