@@ -59,12 +59,16 @@ browser.json dosyası üzerinden istenilen browser'lar eklenebilir. Bkz : https:
 Öncelikle docker engine açık olduğundan emin olun.
 
 Step1 : "docker-compose up -d" komutu ile selenoid ortamı ayağa kalkar.
+
 Step2 : "mvn test -Dtest=ParallelRunner -Dbrowser=remote -Ddataproviderthreadcount=3
 komutu ile testler çalıştırılır.
 
+
 dilerseniz bu noktada http://localhost:8080 üzerinde selenoid'in arayüzünden testlerini takip edebilirsiniz.
 
+
 Step3 : Testler bittiğinde dilerseniz target/report altında raporu görüntüleyebilirsiniz. Videos klasörü altında senaryoların videolarını görüntüleyebilirsiniz. (Şu anda tüm senaryoları kaydedecek şekilde ayarlanmıştır ancak istenirse sadece fail olan senaryoların video kaydı çekilebilmektedir.) Yeni çalıştırma için de aynı komutu kullanabilirsiniz.
+
 
 Step4 : docker-compose down komutu ile selenoid ortamını kapatın.
 
@@ -78,9 +82,13 @@ Ek olarak Assertion methodları farklı bir classta toplanarak step classları d
 Kaynaklar
 --
 https://cucumber.io/docs/cucumber/
+
 https://mvnrepository.com/
+
 https://www.selenium.dev/documentation/
+
 https://aerokube.com/selenoid/latest/
+
 https://stackoverflow.com/
 
 
