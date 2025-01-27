@@ -1,6 +1,7 @@
 package pageobjects.pages;
 
 import operations.Browser;
+import pageobjects.locators.Home;
 import pageobjects.locators.Login;
 import utils.Log;
 
@@ -14,4 +15,5 @@ public class LoginPage extends BasePageManager{
         browser.click(Login.loginButton);
         Log.info("Login butonuna tiklandi");
     }
+
 }

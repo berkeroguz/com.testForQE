@@ -65,7 +65,6 @@ public class Browser {
         try {
             WebElement element = waitFactory.waitForElementIsTextTypable(locator);
             element.sendKeys(keysToSend);
-            Log.info(keysToSend + " texti ilgili yere yazildi.");
             return this;
         } catch (WebDriverException exception) {
             Log.error("Text elemente yazilamadi ");
@@ -101,7 +100,13 @@ public class Browser {
         return this;
     }
 
-    public void scrollToBottom(){
+    public void hardWait(int second) {
+        try {
+            Thread.sleep(second*1000);
+            Log.info(second+"  saniye kadar bekleniyor !");
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 }
