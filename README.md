@@ -53,6 +53,9 @@ komutu ile UI testler parallel olarak çalıştırılabilir.
 
 Parallel olarak docker üzerinde selenoid ile çalıştırma
 --
+Not: Docker çoğu zaman kendisi image'ları indiriyor ancak indirmediği takdirde compose dosyası üzerindeki imageları indirmeniz gerekebilir. "docker pull imageIsmi" şeklinde gerekli imajları terminal üzerinden indirebilirsiniz.
+browser.json dosyası üzerinden istenilen browser'lar eklenebilir. Bkz : https://aerokube.com/selenoid/latest/#_browser_images
+
 Öncelikle docker engine açık olduğundan emin olun.
 
 Step1 : "docker-compose up -d" komutu ile selenoid ortamı ayağa kalkar.
@@ -67,6 +70,18 @@ Step4 : docker-compose down komutu ile selenoid ortamını kapatın.
 
 
 
+Son
+-
+Ek olarak Assertion methodları farklı bir classta toplanarak step classları daha temiz hale getirilebilir. Selenium methodları sistem kullanıldıkça daha temiz ve sade hale getirilerek farklı class'lara alınabilir. Örneğin ActionClass vb.
+
+
+Kaynaklar
+--
+https://cucumber.io/docs/cucumber/
+https://mvnrepository.com/
+https://www.selenium.dev/documentation/
+https://aerokube.com/selenoid/latest/
+https://stackoverflow.com/
 
 
 
